@@ -1,0 +1,15 @@
+a = float(input("Enter a number "))
+b = float(input("Enter a number "))
+c = float(input("Enter a number "))
+
+discriminant = b**2 - 4*a*c
+r1 = (-b + discriminant ** 0.5) / (2 * a)
+r2 = (-b - discriminant ** 0.5) / (2 * a)
+
+if discriminant < 0:
+    print("Result is: " + str(discriminant), "The equation has no real roots")
+elif discriminant == 0:
+    print("Result is: " + str(discriminant), "The equation has 1 root", r1)
+else:
+    discriminant > 0
+    print("Result is: " + str(discriminant), "The equation has 2 roots", r1, r2)
